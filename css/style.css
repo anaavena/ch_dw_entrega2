@@ -1,20 +1,20 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Serif', serif;
 }
 
 ul,
-ol{
+ol {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
@@ -22,7 +22,7 @@ img{
 
 /* ------------------------------ INDEX - HEADER ------------------------------*/
 
-header{
+header {
     border: 1px solid red;
     padding: 2rem;
 
@@ -32,19 +32,45 @@ header{
     text-align: center;
 }
 
-header nav ul li a{
+header nav ul li a {
     color: gray;
 }
 
-.active{
+.active {
     text-decoration: underline;
     color: gray;
 }
 
+.rrss {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+}
+
+.rrss-img {
+    max-width: 25px;
+}
+
+@media (min-width: 480px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+
+}
+
+
 
 /* ------------------------------ INDEX - FOOTER ------------------------------*/
 
-footer{
+footer {
     border: 1px solid red;
     padding: 2rem;
     background-color: #D9D9D9;
@@ -58,7 +84,7 @@ footer{
 
 /* ------------------------------ INDEX - SECCIÓN 1: PRESENTACIÓN ------------------------------*/
 
-.presentacion{
+.presentacion {
     border: 1px solid blue;
     padding: 2rem;
 
@@ -67,25 +93,25 @@ footer{
     gap: 2rem;
 }
 
-.presentacion-title{
+.presentacion-title {
     font-size: 2rem;
     text-align: center;
 }
 
-.presentacion-text{
+.presentacion-text {
     text-align: center;
 }
 
-.presentacion-button{
+.presentacion-button {
     background-color: black;
     padding: 1rem 2rem;
     align-self: center;
-    color: white;    
+    color: white;
 }
 
 /* ------------------------------ INDEX - SECCIÓN 2: GALERÍA ------------------------------*/
 
-.galeria{
+.galeria {
     border: 1px solid orange;
     padding: 2rem;
     background-color: #F5F5F5;
@@ -95,28 +121,28 @@ footer{
     gap: 2rem;
 }
 
-.galeria-title{
+.galeria-title {
     font-size: 2rem;
     text-align: center;
 }
 
-.galeria-imgs{
+.galeria-imgs {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.galeria-button{
+.galeria-button {
     background-color: black;
     padding: 1rem 2rem;
     align-self: center;
-    color: white;    
+    color: white;
 }
 
 
 /* ------------------------------ INDEX - SECCIÓN 3: SUPPORT ------------------------------*/
 
-.support{
+.support {
     border: 1px solid green;
     padding: 2rem;
 
@@ -125,12 +151,12 @@ footer{
     gap: 2rem;
 }
 
-.support-title{
+.support-title {
     font-size: 2rem;
     text-align: center;
 }
 
-.support-article{
+.support-article {
     border: 1px solid salmon;
     padding: 1rem;
 
@@ -139,25 +165,25 @@ footer{
     gap: 2rem;
 }
 
-.support-article-title{
+.support-article-title {
     font-size: 1.3rem;
     text-align: center;
 }
 
-.support-article-text{
+.support-article-text {
     text-align: center;
 }
 
-.support-article-button{
+.support-article-button {
     background-color: black;
     padding: 1rem 2rem;
     align-self: center;
-    color: white;    
+    color: white;
 }
 
 /* ------------------------------ INDEX - SECCIÓN 4: MERCH ------------------------------*/
 
-.merch{
+.merch {
     border: 1px solid pink;
     padding: 2rem;
     background-color: #F5F5F5;
@@ -167,12 +193,12 @@ footer{
     gap: 2rem;
 }
 
-.merch-title{
+.merch-title {
     font-size: 2rem;
     text-align: center;
 }
 
-.merch-article{
+.merch-article {
     border: 1px solid salmon;
     padding: 1rem;
 
@@ -181,29 +207,29 @@ footer{
     gap: 2rem;
 }
 
-.merch-article-title{
+.merch-article-title {
     font-size: 1.3rem;
     text-align: center;
 }
 
-.merch-article-text{
+.merch-article-text {
     text-align: center;
 }
 
-span{
+span {
     text-align: center;
 }
 
-.merch-article-button{
+.merch-article-button {
     background-color: black;
     padding: 1rem 2rem;
     align-self: center;
-    color: white;    
+    color: white;
 }
 
-.merch-button{
+.merch-button {
     background-color: black;
     padding: 1rem 2rem;
     align-self: center;
-    color: white;    
+    color: white;
 }
