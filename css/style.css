@@ -1,214 +1,209 @@
-/* ----------------------------- Reseteo Universal ----------------------------- */
-
-* {
-    margin: 0;
+*{
+    margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Slab', serif;
-    color: rgb(39, 47, 71);
+    font-family: 'Roboto Serif', serif;
 }
 
 ul,
-ol {
+ol{
     list-style-type: none;
 }
 
-a {
+a{
     text-decoration: none;
 }
 
-img {
+img{
     max-width: 100%;
 }
 
 
 
-/* ----------------------------- Estilos CSS ----------------------------- */
+/* ------------------------------ INDEX - HEADER ------------------------------*/
 
-
-/* ----------------------------- HEADER----------------------------- */
-
-.header {
-    background-color: antiquewhite;
-    padding: 1rem;
+header{
+    border: 1px solid red;
+    padding: 2rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 1rem;
 }
 
-header nav ul li a {
-    color: grey;
+header nav ul li a{
+    color: gray;
 }
 
-.active {
+.active{
     text-decoration: underline;
-    color: grey;
+    color: gray;
 }
 
 
-@media (min-width: 480px){
-    .header{
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+/* ------------------------------ INDEX - FOOTER ------------------------------*/
 
-    }
-
-    .nav-list{
-        display: flex;
-        gap: 1rem;
-    
-    }
-
-}
-
-/* ----------------------------- BODY ----------------------------- */
-
-
-/* ------------------- PAGE 1 HOME ------------------- */
-
-
-
-/* ---------- Section 1 ---------- */
-
-.section1 {
-    padding: 1rem;
+footer{
+    border: 1px solid red;
+    padding: 2rem;
+    background-color: #D9D9D9;
 
     display: flex;
     flex-direction: column;
-    gap:2rem;
+    align-items: center;
+    text-align: center;
 }
 
-.section1-title{
+
+/* ------------------------------ INDEX - SECCIÓN 1: PRESENTACIÓN ------------------------------*/
+
+.presentacion{
+    border: 1px solid blue;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.presentacion-title{
     font-size: 2rem;
-    text-align: start;
+    text-align: center;
 }
 
-.section1-button{
+.presentacion-text{
+    text-align: center;
+}
+
+.presentacion-button{
     background-color: black;
-    padding: 0.5rem 1rem;
-    align-self : center;
-    color: white;
-    display: inline-block;
+    padding: 1rem 2rem;
+    align-self: center;
+    color: white;    
 }
 
+/* ------------------------------ INDEX - SECCIÓN 2: GALERÍA ------------------------------*/
 
-
-/* ---------- Section 2 ---------- */
-
-.section2{
-    padding: 1rem;
-    background-color: #f7f7f7;
+.galeria{
+    border: 1px solid orange;
+    padding: 2rem;
+    background-color: #F5F5F5;
 
     display: flex;
     flex-direction: column;
-    gap:2rem;
+    gap: 2rem;
 }
 
-.section2-title{
-    font-size: 1.5rem;
-    text-align: center ;
+.galeria-title{
+    font-size: 2rem;
+    text-align: center;
 }
 
-.section2-imgs{
+.galeria-imgs{
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.section2-button{
+
+.galeria-button{
     background-color: black;
-    padding: 0.5rem 1rem;
-    align-self : center;
-    color: white;
-    display: inline-block;
+    padding: 1rem 2rem;
+    align-self: center;
+    color: white;    
 }
 
 
-/* ---------- Section 3 ---------- */
+/* ------------------------------ INDEX - SECCIÓN 3: SUPPORT ------------------------------*/
 
-.section-3 {
-    width: 100%;
+.support{
+    border: 1px solid green;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.support-title{
+    font-size: 2rem;
     text-align: center;
-    margin-bottom: 50px;
 }
 
-/* .section3-articles{
-    border: 1px solid green
-} */
+.support-article{
+    border: 1px solid salmon;
+    padding: 1rem;
 
-.section3-text {
-    width: 50vh;
-    align-items: center;
-    padding: 20px;
-    display: inline-block;
-    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.section3-img {
-    width: 300px;
-    height: 300px;
-    display: inline-block;
-}
-
-/* ---------- Section 4 ---------- */
-
-.section4-product {
-    width: 300px;
-    height: 400px;
-    padding: 20px;
-    margin: 40px auto;
-    display: inline-block;
-}
-
-
-
-/* ------------------- PAGE 2 WORK ------------------- */
-
-
-
-/* ------------------- PAGE 3 BLOG ------------------- */
-
-
-
-
-/* ------------------- PAGE 4 SHOP ------------------- */
-
-/* Cajas de productos */
-.merch-product {
-    width: 300px;
-    height: 480px;
-    border: #C4C4C4 solid 2px;
-    padding: 20px;
-    margin: 40px auto;
-    display: inline-block;
-}
-
-
-/* ------------------- PAGE 5 ABOUT ME ------------------- */
-
-
-
-
-
-/* ----------------------------- FOOTER ----------------------------- */
-
-.footer-text {
-    background-color: #D9D9D9
-}
-
-.rrss {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-}
-
-footer {
-    width: 100%;
-    min-height: 150px;
+.support-article-title{
+    font-size: 1.3rem;
     text-align: center;
-    padding: 50px;
-    background-color: #D9D9D9
+}
+
+.support-article-text{
+    text-align: center;
+}
+
+.support-article-button{
+    background-color: black;
+    padding: 1rem 2rem;
+    align-self: center;
+    color: white;    
+}
+
+/* ------------------------------ INDEX - SECCIÓN 4: MERCH ------------------------------*/
+
+.merch{
+    border: 1px solid pink;
+    padding: 2rem;
+    background-color: #F5F5F5;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.merch-title{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.merch-article{
+    border: 1px solid salmon;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.merch-article-title{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.merch-article-text{
+    text-align: center;
+}
+
+span{
+    text-align: center;
+}
+
+.merch-article-button{
+    background-color: black;
+    padding: 1rem 2rem;
+    align-self: center;
+    color: white;    
+}
+
+.merch-button{
+    background-color: black;
+    padding: 1rem 2rem;
+    align-self: center;
+    color: white;    
 }
