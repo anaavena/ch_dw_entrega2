@@ -183,7 +183,7 @@ footer {
     }
     
     .galeria-button{
-        grid-template-rows: 3 3;
+        
     }
 
 }
@@ -228,6 +228,23 @@ footer {
     padding: 1rem 2rem;
     align-self: center;
     color: white;
+}
+
+@media (min-width:768px){
+    .support-article {
+        min-height: 30vh;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .support-article-descripción {
+        text-align: start;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 /* ------------------------------ INDEX - SECCIÓN 4: MERCH ------------------------------*/
