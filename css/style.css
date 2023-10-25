@@ -156,6 +156,18 @@ footer {
     color: white;
 }
 
+@media (min-width:768px){
+    .galeria{
+        min-height: 50vh;
+
+        display: grid;
+    }
+
+    .galeria-imgs{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
 
 /* ------------------------------ INDEX - SECCIÓN 3: SUPPORT ------------------------------*/
