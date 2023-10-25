@@ -63,7 +63,6 @@ header nav ul li a {
         gap: 1rem;
     }
 
-
 }
 
 
@@ -109,6 +108,24 @@ footer {
     color: white;
 }
 
+@media (min-width:768px) {
+    .presentacion {
+        min-height: 50vh;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .presentacion-descripcion {
+        text-align: start;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
 /* ------------------------------ INDEX - SECCIÓN 2: GALERÍA ------------------------------*/
 
 .galeria {
@@ -138,6 +155,7 @@ footer {
     align-self: center;
     color: white;
 }
+
 
 
 /* ------------------------------ INDEX - SECCIÓN 3: SUPPORT ------------------------------*/
