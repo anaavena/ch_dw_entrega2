@@ -262,10 +262,13 @@ footer {
 .merch-title {
     font-size: 2rem;
     text-align: center;
+    padding: 1rem;
 }
 
 .merch-article {
     border: 1px solid salmon;
+    max-width: 350px;
+    max-height: 700px;
     padding: 1rem;
 
     display: flex;
@@ -298,4 +301,10 @@ span {
     padding: 1rem 2rem;
     align-self: center;
     color: white;
+}
+
+@media (min-width:768px){
+    .merch{display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
