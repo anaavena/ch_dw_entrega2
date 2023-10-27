@@ -18,9 +18,9 @@ img {
     max-width: 100%;
 }
 
-/* ------------------------------ INDEX - CONTAINER ------------------------------*/
+/* ------------------------------ ALL PAGES - CONTAINER ------------------------------*/
 
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -162,28 +162,25 @@ footer {
     color: white;
 }
 
-@media (min-width:768px){
-    .galeria{
+@media (min-width:768px) {
+    .galeria {
         min-height: 50vh;
 
         display: grid;
         grid-template-rows: auto;
     }
 
-    .galeria-title{
+    .galeria-title {
         padding: 1rem;
     }
-    .galeria-imgs{
+
+    .galeria-imgs {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         width: 100%;
         height: 100%;
 
         object-fit: cover;
-    }
-    
-    .galeria-button{
-        
     }
 
 }
@@ -230,7 +227,7 @@ footer {
     color: white;
 }
 
-@media (min-width:768px){
+@media (min-width:768px) {
     .support-article {
         min-height: 30vh;
 
@@ -246,3 +243,42 @@ footer {
         justify-content: space-between;
     }
 }
+
+/* ------------------------------ WORK - SECCIÓN 1: PORTFOLIO ------------------------------*/
+
+.portfolio {
+    border: 1px solid rgb(0, 0, 255);
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.portfolio-title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.portfolio-galeria{
+    border: 1px solid mediumaquamarine;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width:600px) {
+    .portfolio-galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:979px) {
+    .portfolio-galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
