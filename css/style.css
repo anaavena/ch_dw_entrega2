@@ -260,7 +260,7 @@ footer {
     text-align: center;
 }
 
-.portfolio-galeria{
+.portfolio-galeria {
     border: 1px solid mediumaquamarine;
 
     display: flex;
@@ -284,6 +284,45 @@ footer {
 
 /* ------------------------------ SHOP - SECCIÓN 1: Digital books and zines ------------------------------*/
 
-.merch-product{
+.merch {
+    border: 1px solid green;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.merch-section{
+    border: 1px solid cadetblue;
+    padding: 2rem;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.merch-section-title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.merch-section-product {
     border: 1px solid blue;
+    width: 250px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center
+    
+}
+
+.merch-section-product img{
+    width: 100%;
+    border-radius: 10px;
 }
