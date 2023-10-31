@@ -135,7 +135,7 @@ footer {
 
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
     }
 }
 
@@ -174,7 +174,6 @@ footer {
 
 @media (min-width:768px) {
     .galeria {
-
         display: grid;
         grid-template-rows: auto;
     }
