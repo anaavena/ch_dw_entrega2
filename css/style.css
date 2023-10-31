@@ -174,14 +174,6 @@ footer {
 }
 
 @media (min-width:768px) {
-    .galeria {
-        display: grid;
-        grid-template-rows: auto;
-    }
-
-    .galeria-title {
-        padding: 1rem;
-    }
 
     .galeria-imgs {
         display: grid;
