@@ -311,7 +311,7 @@ footer {
     }
 }
 
-/* ------------------------------ SHOP - SECCIÓN 1: Digital books and zines ------------------------------*/
+/* ------------------------------ SHOP - Todas las secciones ------------------------------*/
 
 .merch {
     border: 1px solid green;
@@ -355,3 +355,22 @@ footer {
     width: 100%;
     border-radius: 10px;
 }
+
+
+@media (min-width:600px) {
+    .merch-section-articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    }
+
+    @media (min-width:992px) {
+        .merch-section-articles {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+        }
+        }
+
+/* ------------------------------ BLOG - SECCIÓN 1: ? ------------------------------*/
