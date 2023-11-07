@@ -5,15 +5,14 @@
 
     &__grande {
         padding: 1rem 2rem;
+    }
 
+    &__chico {
+        padding: 0.5rem 1rem;
+        margin: 1rem auto;
+    }
 
-        &__chico {
-            padding: 0.5rem 1rem;
-            margin: 1rem auto;
-        }
-
-        &:hover {
-            background-color: red;
-        }
+    &:hover {
+        background-color: red;
     }
 }

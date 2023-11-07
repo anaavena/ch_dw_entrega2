@@ -1,10 +1,20 @@
 footer {
     border: 1px solid red;
     padding: 2rem;
-    background-color: $backgroundcolor-footer;
+    background-color: $color-bgfooter;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    .rrss {
+        display: flex;
+        flex-direction: row;
+        gap: 0.2rem;
+
+        img {
+            max-width: 25px;
+        }
+    }
 }
