@@ -1,6 +1,5 @@
-
 .blog {
-    border: 1px solid blue;
+    // border: 1px solid blue;
     padding: 2rem;
 
     display: flex;
@@ -56,122 +55,106 @@
                     margin: 0 1rem;
                 }
             }
+
+            @include mq-md768 {
+                min-height: 50vh;
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+            }
         }
     }
-}
 
+    &-section2 {
+        // border: 1px solid rgb(187, 0, 255);
+        padding: 2rem;
 
-
-@media (min-width:768px) {
-    .blog-section1__article {
-        min-height: 50vh;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-    }
-}
-
-
-
-.blog-section2 {
-    border: 1px solid rgb(187, 0, 255);
-    padding: 2rem;
-
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-
-    &__title {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    &__box {
-        /* border: 1px solid lawngreen; */
         display: flex;
         flex-direction: column;
         gap: 2rem;
 
-        &-article {
-            border: 1px solid gray;
+        &__title {
+            font-size: 2rem;
+            text-align: center;
+        }
 
+        &__box {
+            /* border: 1px solid lawngreen; */
             display: flex;
             flex-direction: column;
+            gap: 2rem;
 
-            &-description {
+            &-article {
+                border: 1px solid gray;
+
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                text-align: center;
-                gap: 1rem;
-                padding: 1rem;
+
+                &-description {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    gap: 1rem;
+                    padding: 1rem;
+                }
+            }
+
+            @include mq-md600{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
             }
         }
     }
-}
 
+    &-section3 {
+        // border: 1px solid rgb(0, 255, 76);
+        padding: 2rem;
 
-@media (min-width:600px) {
-    .blog-section2__box {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
-}
-
-
-
-.blog-section3 {
-    border: 1px solid rgb(0, 255, 76);
-    padding: 2rem;
-
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-
-    &__title {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    &__box {
-        border: 1px solid lawngreen;
         display: flex;
         flex-direction: column;
         gap: 2rem;
 
-        &-article {
-            border: 1px solid gray;
+        &__title {
+            font-size: 2rem;
+            text-align: center;
+        }
 
+        &__box {
+            // border: 1px solid lawngreen;
             display: flex;
             flex-direction: column;
+            gap: 2rem;
 
-            &-description {
+            &-article {
+                border: 1px solid gray;
+
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                text-align: center;
-                gap: 1rem;
-                padding: 1rem;
+
+                &-description {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    gap: 1rem;
+                    padding: 1rem;
+                }
+            }
+
+            @include mq-md600 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+
+            @include mq-lg992{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 2rem;
             }
         }
-    }
-}
-
-
-@media (min-width:600px) {
-    .blog-section3__box {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
-}
-
-@media (min-width:992px) {
-    .blog-section3__box {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 2rem;
     }
 }

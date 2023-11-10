@@ -1,5 +1,5 @@
 .shop {
-    border: 1px solid green;
+    // border: 1px solid green;
     padding: 2rem;
 
     display: flex;
@@ -12,7 +12,7 @@
     }
 
     &-section__articles {
-        border: 1px solid cadetblue;
+        // border: 1px solid cadetblue;
         padding: 2rem;
         align-items: center;
 
@@ -24,28 +24,26 @@
             border: 1px solid blue;
             width: 250px;
             text-align: center;
+            padding: 2rem;
 
             display: flex;
             flex-direction: column;
             gap: 2rem;
+            align-items: center;
 
-            align-items: center img {
+            &img {
                 width: 100%;
                 border-radius: 10px;
             }
         }
-    }
-}
 
-
-
-@media (min-width:600px) {
-    .shop-section__articles {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        justify-items: center;
-        align-items: center;
+        @include mq-md600 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            justify-items: center;
+            align-items: center;
+        }
     }
 }
 

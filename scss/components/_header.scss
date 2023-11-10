@@ -1,5 +1,5 @@
 header {
-    border: 1px solid red;
+    // border: 1px solid red;
     padding: 2rem;
 
     display: flex;
@@ -26,18 +26,16 @@ header {
         }
     }
 
-}
-
-@media (min-width: 480px) {
-    header {
+    @include mq-sm480 {
         flex-direction: row;
         justify-content: space-between;
-    }
 
-    .nav-list {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
+        @include mq-sm480 {
+            .nav-list {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+            }
+        }
     }
-
 }
