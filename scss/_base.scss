@@ -21,7 +21,6 @@ a {
 
 img {
     max-width: 100%;
-
 }
 
 .container {
@@ -51,4 +50,16 @@ img {
     @media (min-width: 992px) {
         @content;
     }
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }

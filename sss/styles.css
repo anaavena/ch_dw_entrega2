@@ -100,17 +100,17 @@ footer .rrss img {
   flex-direction: column;
   gap: 2rem;
 }
-.index-presentacion__descripcion {
-  /* border: 1px solid hotpink; */
+.index-presentacion__description {
+  border: 1px solid hotpink;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.index-presentacion__descripcion h2 {
+.index-presentacion__descriptionh2 {
   font-size: 2rem;
   text-align: center;
 }
-.index-presentacion__descripcionp {
+.index-presentacion__descriptionp {
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -172,6 +172,7 @@ footer .rrss img {
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   gap: 6rem;
 }
 .index-support__title {
@@ -265,7 +266,6 @@ footer .rrss img {
   text-align: center;
 }
 .shop-section__articles {
-  border: 1px solid cadetblue;
   padding: 2rem;
   align-items: center;
   display: flex;
@@ -273,6 +273,7 @@ footer .rrss img {
   gap: 2rem;
 }
 .shop-section__articles-product {
+  border: 1px solid blue;
   width: 250px;
   text-align: center;
   padding: 2rem;
@@ -281,7 +282,7 @@ footer .rrss img {
   gap: 2rem;
   align-items: center;
 }
-.shop-section__articles-product img {
+.shop-section__articles-productimg {
   width: 100%;
   border-radius: 10px;
 }
@@ -303,7 +304,6 @@ footer .rrss img {
   }
 }
 .blog {
-  border: 1px solid blue;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -351,7 +351,6 @@ footer .rrss img {
   text-align: center;
   margin: 0 1rem;
 }
-
 @media (min-width: 768px) {
   .blog-section1__article {
     min-height: 50vh;
@@ -361,7 +360,6 @@ footer .rrss img {
   }
 }
 .blog-section2 {
-  border: 1px solid rgb(187, 0, 255);
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -390,7 +388,6 @@ footer .rrss img {
   gap: 1rem;
   padding: 1rem;
 }
-
 @media (min-width: 600px) {
   .blog-section2__box {
     display: grid;
@@ -399,7 +396,6 @@ footer .rrss img {
   }
 }
 .blog-section3 {
-  border: 1px solid rgb(0, 255, 76);
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -410,7 +406,6 @@ footer .rrss img {
   text-align: center;
 }
 .blog-section3__box {
-  border: 1px solid lawngreen;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -428,7 +423,6 @@ footer .rrss img {
   gap: 1rem;
   padding: 1rem;
 }
-
 @media (min-width: 600px) {
   .blog-section3__box {
     display: grid;
@@ -443,6 +437,7 @@ footer .rrss img {
     gap: 2rem;
   }
 }
+
 .aboutme-contact {
   /* border: 1px solid blue; */
   padding: 2rem;
