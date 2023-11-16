@@ -5,18 +5,8 @@
 @include flex-column;
 
     &__description {
-        border: 1px solid hotpink;
-
+        // border: 1px solid hotpink;
         @include flex-column;
-
-        &h2 {
-            font-size: 2rem;
-            text-align: center;
-        }
-
-        &p {
-            text-align: center;
-        }
     }
 
     @include mq-md768 {
@@ -43,11 +33,6 @@
     background-color: $color-bg1;
 
     @include flex-column;
-
-    &__title {
-        font-size: 2rem;
-        text-align: center;
-    }
 
     &__imgs {
         display: flex;
@@ -89,11 +74,6 @@
     @include flex-column;
     gap: 6rem;
 
-    &__title {
-        font-size: 2rem;
-        text-align: center;
-    }
-
     &__article {
         /* border: 1px solid salmon; */
         padding: 2px;
@@ -112,10 +92,6 @@
 
             &-title {
                 font-size: 1.3rem;
-                text-align: center;
-            }
-
-            &-text {
                 text-align: center;
             }
         }

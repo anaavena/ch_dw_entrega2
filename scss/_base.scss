@@ -28,6 +28,23 @@ img {
     margin: 0 auto;
 }
 
+
+
+// CLASS
+
+.title-h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.text-p {
+    text-align: center;
+}
+
+
+
+// MIXINS RESPONSIVE
+
 @mixin mq-sm480 {
     @media (min-width:480px) {
         @content;
@@ -51,6 +68,10 @@ img {
         @content;
     }
 }
+
+
+
+// MIXINS SM480 - CENTRADO BASE
 
 @mixin flex-center {
     display: flex;

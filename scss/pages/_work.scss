@@ -1,15 +1,7 @@
 .work-portfolio {
     // border: 1px solid rgb(0, 0, 255);
     padding: 2rem;
-
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-
-    &__title {
-        font-size: 2rem;
-        text-align: center;
-    }
+    @include flex-column;
 
     &__imgs {
         // border: 1px solid mediumaquamarine;
