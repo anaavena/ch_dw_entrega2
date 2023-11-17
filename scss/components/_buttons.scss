@@ -1,7 +1,8 @@
 .button {
-    background-color: black;
+    background-color: $color-bk;
     align-self: center;
-    color: white;
+    color: $color-wh;
+    border-radius: 50px;
 
     &__grande {
         padding: 1rem 2rem;
@@ -13,6 +14,6 @@
     }
 
     &:hover {
-        background-color: red;
+        background-color: $color-2;
     }
 }

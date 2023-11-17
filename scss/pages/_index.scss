@@ -1,7 +1,5 @@
 .index-presentacion {
     /* border: 1px solid blue; */
-    padding: 2rem;
-
 @include flex-column;
 
     &__description {
@@ -17,8 +15,6 @@
         align-items: center;
 
         &__descripcion {
-            text-align: start;
-
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -69,31 +65,16 @@
 
 .index-support {
     // border: 1px solid green;
-    padding: 2rem;
-
     @include flex-column;
-    gap: 6rem;
+    gap: 4rem;
 
     &__article {
         /* border: 1px solid salmon; */
-        padding: 2px;
-
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
+        @include flex-column;
 
         &-description {
             /* border: 1px solid salmon; */
-            padding: 2rem;
-
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-
-            &-title {
-                font-size: 1.3rem;
-                text-align: center;
-            }
+            @include flex-column;
         }
 
         @include mq-md600 {
