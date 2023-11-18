@@ -1,6 +1,6 @@
 .index-presentacion {
     /* border: 1px solid blue; */
-@include flex-column;
+    @include flex-column;
 
     &__description {
         // border: 1px solid hotpink;
@@ -24,11 +24,12 @@
 
 
 .index-galeria {
-    // border: 1px solid orange;
-    padding: 2rem;
+    @include flex-column;
+    border-color: 1px solid red;
     background-color: $color-bg1;
 
-    @include flex-column;
+
+
 
     &__imgs {
         display: flex;

@@ -1,41 +1,53 @@
 header {
     // border: 1px solid red;
-    padding: 2rem;
+    @include flex-column;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    nav ul li a {
-        color: $color-gy;
+    .titlebox {
+        justify-content: center;
+        padding: 2rem;
     }
 
-    .active {
-        text-decoration: underline;
-        color: $color-gy;
-    }
+    .navbox {
 
-    .rrss {
-        display: flex;
-        flex-direction: row;
-        gap: 0.2rem;
+        nav ul li a {
+            color: $color-gy;
+            font-family: $ff-robotoflex;
+        }
 
-        img {
-            max-width: 25px;
+        .active {
+            text-decoration: underline;
+            color: $color-gy;
+        }
+
+        .rrss {
+            display: flex;
+            flex-direction: row;
+            gap: 0.2rem;
+
+            img {
+                max-width: 25px;
+            }
         }
     }
+
+
 
     @include mq-sm480 {
         flex-direction: row;
         justify-content: space-between;
 
-        @include mq-sm480 {
-            .nav-list {
-                display: flex;
-                flex-direction: row;
-                gap: 1rem;
-            }
+
+        .titlebox {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0rem;
+        }
+
+        .nav-list {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
         }
     }
 }
