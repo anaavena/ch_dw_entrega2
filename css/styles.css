@@ -76,6 +76,7 @@ header .navbox .active {
 header .navbox .rrss {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   gap: 0.2rem;
 }
 header .navbox .rrss img {
