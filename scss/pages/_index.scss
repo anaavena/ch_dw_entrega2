@@ -24,39 +24,39 @@
 
 
 .index-galeria {
-    @include flex-column;
-    border-color: 1px solid red;
-    background-color: $color-bg1;
+    @include bg-gray;
 
+    &__content {
+        @include flex-column;
 
-    &__imgs {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+        &-imgs {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
 
-        @include mq-md600 {
+            @include mq-md600 {
 
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-columns: 1fr 1fr;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
 
-            &--destacada {
-                grid-column: span 2;
-            }
-        }
-
-        @include mq-lg992 {
-            grid-template-columns: 1fr 1fr 1fr;
-
-            &img {
-                width: 100%;
-                height: 100%;
-
-                object-fit: cover;
+                &--destacada {
+                    grid-column: span 2;
+                }
             }
 
-            &--destacada {
-                grid-column: span 1;
+            @include mq-lg992 {
+                grid-template-columns: 1fr 1fr 1fr;
+
+                &img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                &--destacada {
+                    grid-column: span 1;
+                }
             }
         }
     }

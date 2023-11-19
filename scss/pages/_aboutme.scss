@@ -1,12 +1,16 @@
 .aboutme-contact {
-    background-color: $color-bg1;
-    @include flex-column;
+    @include bg-gray;
 
-    &__form {
-        /* border: 1px solid hotpink; */
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        align-items: center;
+    .aboutme-contact__content {
+        @include flex-column;
+    
+        &-form {
+            /* border: 1px solid hotpink; */
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
     }
+
 }

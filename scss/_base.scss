@@ -5,6 +5,7 @@ $color-gy: gray;
 $color-wh: white;
 $color-1: #30395F;
 $color-2: #F5C56E;
+$color-3: #F29E93;
 $color-line: #D9D9D9;
 $color-tag: #c4c4c4;
 
@@ -69,7 +70,15 @@ img {
     padding: 0.5rem;
 }
 
+.rrss {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
 
+    img {
+        max-width: 25px;
+    }
+}
 
 // MIXINS RESPONSIVE
 
@@ -109,4 +118,8 @@ img {
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+@mixin bg-gray {
+    background-color: $color-bg1;
 }
