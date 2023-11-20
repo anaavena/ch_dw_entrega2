@@ -38,13 +38,13 @@
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
                 gap: 2rem;
 
-                .article {
+                .blog-article {
                     grid-column: span 3;
                 }
             }
 
             @include mq-lg992 {
-                .article {
+                .blog-article {
                     grid-column: span 2;
                 }
             }

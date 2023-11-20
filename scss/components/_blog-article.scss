@@ -1,9 +1,9 @@
-.article {
-    border: 1px solid $color-line;
+.blog-article {
+    background-color: $color-bg1;
     display: flex;
     flex-direction: column;
 
-    &-description {
+    &__description {
         display: flex;
         flex-direction: column;
         align-items: center;
