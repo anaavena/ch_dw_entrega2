@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,700&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>About me - Anabella Avena | Illustrator and content creator</title>
 </head>
 
@@ -57,7 +58,7 @@
     <main>
 
         <!-------------------- ABOUT ME SECTION 1 - Bio -------------------->
-        <section class="index-presentacion container">
+        <section data-aos="flip-down" data-aos-duration="1000" class="index-presentacion container">
 
             <img src="../img/bio1.jpg" alt="Picture of myself enjoying the day at the park">
 
@@ -144,6 +145,10 @@
 
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

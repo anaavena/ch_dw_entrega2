@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto+Serif:opsz,wght@8..144,400;8..144,700&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Home - Anabella Avena | Digital and traditional illustrator and content creator</title>
 </head>
 
@@ -61,7 +62,7 @@
 
         <!---------- SECCION 1: PRESENTACION ---------->
 
-        <section class="index-presentacion container">
+        <section data-aos="flip-down" data-aos-duration="1000" class="index-presentacion container">
 
             <div class="index-presentacion__description">
                 <h2 class="title-h2">Hi! My name is Ana</h2>
@@ -89,10 +90,12 @@
                 <h2 class="title-h2">Some of my illustrations</h2>
 
                 <div class="index-galeria__content-imgs">
-                    <img class="index-galeria__content-imgs--destacada" src="./img/work-1.jpg"
-                        alt="Illustration for the chinese story: the butterfly lovers">
-                    <img src="./img/work-2.jpg" alt="Illustration for the Lulú Martins Challenge">
-                    <img src="./img/work-3.jpg" alt="Illustration called spacial lovers">
+                    <img data-aos="fade-up" data-aos-duration="1000" class="index-galeria__content-imgs--destacada"
+                        src="./img/work-1.jpg" alt="Illustration for the chinese story: the butterfly lovers">
+                    <img data-aos="fade-up" data-aos-duration="1000" src="./img/work-2.jpg"
+                        alt="Illustration for the Lulú Martins Challenge">
+                    <img data-aos="fade-up" data-aos-duration="1000" src="./img/work-3.jpg"
+                        alt="Illustration called spacial lovers">
                 </div>
 
                 <a class="button button__grande" href="./pages/aboutme.html">See more</a>
@@ -110,13 +113,14 @@
 
             <!-- Artículo 1 IG -->
 
-            <article class="index-support__article">
+            <article data-aos="fade-left" data-aos-duration="1000" class="index-support__article">
 
                 <img src="./img/instagram-logo.jpeg" alt="Logo de instagram">
 
                 <div class="index-support__article-description">
                     <h3 class="title-h3">Follow me on Instagram to see new illustrations every day!</h3>
-                    <p class="text-p">If you want to keep up to date with my latest work, illustrations and most recent posts you'll like to follow me on Instagram :)</p>
+                    <p class="text-p">If you want to keep up to date with my latest work, illustrations and most recent
+                        posts you'll like to follow me on Instagram :)</p>
                     <a class="button button__grande" href="https://www.instagram.com/anabellaavena/"
                         target="_blank">Follow me!</a>
                 </div>
@@ -126,7 +130,7 @@
 
             <!-- Artículo 2: YT -->
 
-            <article class="index-support__article">
+            <article data-aos="fade-right" data-aos-duration="1000" class="index-support__article">
 
                 <div class="index-support__article-description">
                     <h3 class="title-h3">Suscribe on Youtube for new videos twice a week!</h3>
@@ -143,13 +147,15 @@
 
             <!-- Artículo 3: PT -->
 
-            <article class="index-support__article">
+            <article data-aos="fade-left" data-aos-duration="1000" class="index-support__article">
 
                 <img src="./img/patreon-logo.png" alt="Logo de Patreon">
 
                 <div class="index-support__article-description">
                     <h3 class="title-h3">Become a Patron today to get access to all of my exclusive content!</h3>
-                    <p class="text-p">Depending on the level you choose, each month you will receive podcasts, downloads, special youtube videos, tutorials and don't forget that you will also be able to access all the content from previous months</p>
+                    <p class="text-p">Depending on the level you choose, each month you will receive podcasts,
+                        downloads, special youtube videos, tutorials and don't forget that you will also be able to
+                        access all the content from previous months</p>
                     <a class="button button__grande" href="https://www.patreon.com/home" target="_blank">Become a
                         Patreon</a>
                 </div>
@@ -181,7 +187,10 @@
 
     </footer>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
