@@ -274,6 +274,9 @@ footer .rrss {
   justify-content: center;
   align-items: center;
 }
+.index-support__article.yt {
+  flex-direction: column-reverse;
+}
 .index-support__article-description {
   display: flex;
   flex-direction: column;
